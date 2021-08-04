@@ -17,7 +17,7 @@ def get_content(html):
     items = soup.find(class_="text")
     print("Сейчас будет шутка, ждите")
     pt.alert(items.text, "shytka!", "ok")
-
+ 
 
 def parse():
     html = get_html(URL)
