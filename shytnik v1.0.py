@@ -15,7 +15,6 @@ def get_html(url, params=None):
 def get_content(html):
     soup = BeautifulSoup(html, "html.parser")
     items = soup.find(class_="text")
- #   print(items.text) # как-то надо добавить в о всплывающее окно 
     print("Сейчас будет шутка, ждите")
     pt.alert(items.text, "shytka!", "ok")
 
